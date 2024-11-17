@@ -7,27 +7,27 @@ $(document).ready(function() {
     const aboutClose = document.querySelector('.aboutClose'); 
     
     const backgroundImages = [
-        { src: "assets/pics/g1.png", min: 0, max: 0.05 },
-        { src: "assets/pics/g2.png", min: 0.05, max: 0.1 },
-        { src: "assets/pics/g3.png", min: 0.1, max: 0.15 },
-        { src: "assets/pics/y2.png", min: 0.15, max: 0.2 },
-        { src: "assets/pics/yo1.png", min: 0.2, max: 0.25 },
-        { src: "assets/pics/o1.png", min: 0.25, max: 0.30 }, 
-        { src: "assets/pics/o2.png", min: 0.30, max: 0.35 }, 
-        { src: "assets/pics/o3.png", min: 0.35, max: 0.40 }, 
-        { src: "assets/pics/or1.png", min: 0.40, max: 0.45 },
-        { src: "assets/pics/or2.png", min: 0.45, max: 0.50 },
-        { src: "assets/pics/r1.png", min: 0.50, max: 0.55 },
-        { src: "assets/pics/r2.png", min: 0.55, max: 0.60 },
-        { src: "assets/pics/r3.png", min: 0.60, max: 0.65 },
-        { src: "assets/pics/r4.png", min: 0.65, max: 0.70 },
-        { src: "assets/pics/b1.png", min: 0.70, max: 0.75 },
-        { src: "assets/pics/b2.png", min: 0.75, max: 0.80 },
-        { src: "assets/pics/b3.png", min: 0.80, max: 0.84 },
-        { src: "assets/pics/b4.png", min: 0.84, max: 0.88 },
-        { src: "assets/pics/w1.png", min: 0.88, max: 0.93 },
-        { src: "assets/pics/w2.png", min: 0.93, max: 0.97 },
-        { src: "assets/pics/w3.png", min: 0.97, max: 1.0 }
+        { src: "assets/pics/g1.webp", min: 0, max: 0.05 },
+        { src: "assets/pics/g2.webp", min: 0.05, max: 0.1 },
+        { src: "assets/pics/g3.webp", min: 0.1, max: 0.15 },
+        { src: "assets/pics/y2.webp", min: 0.15, max: 0.2 },
+        { src: "assets/pics/yo1.webp", min: 0.2, max: 0.25 },
+        { src: "assets/pics/o1.webp", min: 0.25, max: 0.30 }, 
+        { src: "assets/pics/o2.webp", min: 0.30, max: 0.35 }, 
+        { src: "assets/pics/o3.webp", min: 0.35, max: 0.40 }, 
+        { src: "assets/pics/or1.webp", min: 0.40, max: 0.45 },
+        { src: "assets/pics/or2.webp", min: 0.45, max: 0.50 },
+        { src: "assets/pics/r1.webp", min: 0.50, max: 0.55 },
+        { src: "assets/pics/r2.webp", min: 0.55, max: 0.60 },
+        { src: "assets/pics/r3.webp", min: 0.60, max: 0.65 },
+        { src: "assets/pics/r4.webp", min: 0.65, max: 0.70 },
+        { src: "assets/pics/b1.webp", min: 0.70, max: 0.75 },
+        { src: "assets/pics/b2.webp", min: 0.75, max: 0.80 },
+        { src: "assets/pics/b3.webp", min: 0.80, max: 0.84 },
+        { src: "assets/pics/b4.webp", min: 0.84, max: 0.88 },
+        { src: "assets/pics/w1.webp", min: 0.88, max: 0.93 },
+        { src: "assets/pics/w2.webp", min: 0.93, max: 0.97 },
+        { src: "assets/pics/w3.webp", min: 0.97, max: 1.0 }
     ];
 
     aboutBox.addEventListener('click', function() {
