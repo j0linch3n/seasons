@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Turn Over a New Leaf</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+       
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <div class="grid"></div>
+        <div class="logo">
+            <span id="logotype">Turn Over <br>a New Leaf</span>
+        </div>
+        <div class="background-image" id="backgroundImage"></div>
+        <button id="toggleBackground" class="toggle-btn">Hide</button>
+        <a href="#" id="aboutButton" class="aboutBox"> 
+            <span class="aboutClose">About</span>
+        </a>
+        <div class="wrapper">
+            <div class="aboutCard" id="Card" style="display: none;">
+                <div class="cube-1"></div>
+                <div class="cube-2"></div>
+                <div class="cube-3"></div>
+                <div class="cube-4"></div>
+                <div class="content">
+                    <h2>College hill, providence, RI.</h2>
+                    <h1>Turn Over A New Leaf</h1>
+                    <p2>is a webpage dedicated to capturing and forecasting the vibrant transformation of fall foliage here on 
+                        College Hill this semester. As I experience my last autumn in Providence, I long to capture the 
+                        leaves’ vivid hues as a timeless keepsake of the season’s fleeting beauty.</p2>
+                </div>
+            </div>
+            <div id="square-container"></div>
+            <div class="slidecontainer">
+                <input type="range" min="248" max="346" class="slider" id="dateSlider">
+                <span id="date"></span>
+            </div>
+         <!-- <div class="bottomBox"></div>    -->
+    </div>
+
+    </body>
+</html>

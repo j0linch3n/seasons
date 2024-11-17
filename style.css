@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=The+Girl+Next+Door&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans:wght@400..700&family=The+Girl+Next+Door&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans:wght@400..700&family=The+Girl+Next+Door&family=Tiny5&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  overflow: hidden;
+  background-color: #3896EF;
+}
+.logo{
+  width:120px;
+  height:60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FFE600;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  z-index: 10;
+}
+.logo:hover {
+  transform: rotateY(180deg);
+  transition: transform 2s;
+}
+/* .bottomBox{
+  width:100%;
+  bottom:0px;
+  height: 30px;
+  position: absolute;
+  background-color: #FFE600; 
+} */
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Puts it behind other elements */
+  transition: background-image 0.5s ease; /* Smooth transition between images */
+}
+.aboutBox{
+  width: 60px;
+  height: 60px;
+  background-color: #FFE600;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  /* transition: transform 2s; */
+  transform-origin: center;
+  transition: transform 500ms ease, opacity 500ms ease;
+  z-index: 100;
+}
+.aboutCard{
+  width: 720px;
+  height: 270px;
+  background-color: #FFE600;
+  border-radius: 1px;
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  flex-direction: column; /* Aligns items in a column format */
+  position: relative;
+  padding: 70px;
+  box-sizing: border-box; /* Ensures padding is included within the width/height */
+  z-index: 1000;
+  transform-origin: center;
+  transition: transform 500ms ease, opacity 500ms ease;
+}
+
+[class^="cube-"]{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.cube-1{
+  background-color: #82CD00;
+  top: 0px;
+  right: 0px;
+}
+.cube-2{
+  background-color: #C91E0A;
+  top: 0px;
+  left: 0px;
+}
+.cube-3{
+  background-color: #6C2907;
+  bottom: 0px;
+  right: 0px;
+}
+.cube-4{
+  background-color: #E66B07;
+  bottom: 0px;
+  left: 0px;
+}
+.aboutClose{
+  /* transition: opacity 0.5s ease; */
+  display: inline-block;
+  /* font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; */
+  font-family: "Tiny5", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12pt;
+  text-transform: uppercase;
+  color: #471C00;
+}
+.aboutBox:hover .aboutClose {
+  color: #FFE500;
+}
+.toggle-btn{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #FFE600;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12pt;
+  text-transform: uppercase;
+  color: #471C00;
+}
+.toggle-btn:hover{
+color: #3896EF;
+}
+
+.slidecontainer{
+  width: 100%;
+  z-index: 100;
+  bottom:0px;
+  position: absolute;
+}
+#dateSlider{
+  width:100%;
+  bottom:0px;
+  position: absolute;
+}
+#date{
+  /* text-transform: uppercase; */
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  /* bottom: 20px; */
+  bottom: 58px;
+  position: absolute;  
+  left: 50%;                    /* Move to the horizontal center */
+  transform: translateX(-50%);  /* Center-aligns the element */
+  text-align: center;           /* Center text inside the element */
+  color: #471C00;
+  width:180px;
+  height:60px;
+  background-color: #FFE600;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  z-index: 100;
+
+}
+#logotype{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  /* font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto; */
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15pt;
+  text-transform: uppercase;
+  color: #471C00;
+  line-height: 0.85;
+}
+.logo:hover #logotype{
+  transform: rotateY(-180deg);
+  color: #FFE500;
+}
+.grid{
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+  linear-gradient(to bottom, #80808012 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index:0;
+}
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 56px;
+    /* background: linear-gradient(0.25turn, #BDF848, #28CE1C,#FFE600,#EF6204,#E31E00,#341500,#000000); */
+    background: linear-gradient(0.25turn, 
+    #265000 5%, 
+    #457519 10%,
+    /* #8B9216 12%, */
+    #98B301 15%,
+    #F0C01C 17%,
+    #FFC72C 20%,
+    #EDA421 25%,
+    #E98604 30%,
+    #FE7F17 35%,
+    #E66B07 40%,
+    #DF3908 45%,
+    #D82827 50%,
+    #C91E0A 70%,
+    #923113 80%,
+    #6C2907 87%,
+    #FFFFFF 92%,
+    #FFFFFF 100%
+    );
+    outline: solid #FFE600;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 65px;
+    background: #FFE500;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 45px;
+    height: 65px;
+    cursor: pointer;
+  }
+
+  /* Container styling */
+#square-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 60px; /* Ensure it doesn't overlap with the slider */
+  overflow: hidden; /* Prevent any overflow */
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1; /* Behind other elements */
+}
+
+/* Square styling */
+.square {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+  h2{
+    /* font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 10pt;
+    text-align: center;
+    color: #471C00;
+    line-height: 0;
+    padding-bottom: 25px;
+  }
+  h1{
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    color: #471C00;
+    padding-bottom: 5px;
+  }
+  p2{
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #471C00;
+    padding-bottom: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    p2 {
+      font-size: 12px;
+    }
+  }
